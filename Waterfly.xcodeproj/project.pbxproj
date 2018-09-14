@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		210478EE214AE22600977E16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210478ED214AE22600977E16 /* AppDelegate.swift */; };
 		210478F0214AE22600977E16 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210478EF214AE22600977E16 /* FirstViewController.swift */; };
-		210478F2214AE22600977E16 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210478F1214AE22600977E16 /* SecondViewController.swift */; };
+		210478F2214AE22600977E16 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210478F1214AE22600977E16 /* LoginViewController.swift */; };
 		210478F5214AE22600977E16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210478F3214AE22600977E16 /* Main.storyboard */; };
 		210478F7214AE23800977E16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 210478F6214AE23800977E16 /* Assets.xcassets */; };
 		210478FA214AE23800977E16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210478F8214AE23800977E16 /* LaunchScreen.storyboard */; };
+		21047902214AEDEF00977E16 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21047901214AEDEF00977E16 /* TasksViewController.swift */; };
+		21047904214AEDFE00977E16 /* NoticeboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21047903214AEDFE00977E16 /* NoticeboardViewController.swift */; };
+		21047906214AEE0A00977E16 /* TimetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21047905214AEE0A00977E16 /* TimetableViewController.swift */; };
+		21047908214AEE5C00977E16 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21047907214AEE5C00977E16 /* LoadingViewController.swift */; };
+		2104790C214AFD3600977E16 /* JSONWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2104790B214AFD3600977E16 /* JSONWork.swift */; };
+		2104790E214B00F600977E16 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2104790D214B00F600977E16 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		210478EA214AE22600977E16 /* Waterfly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waterfly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		210478ED214AE22600977E16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		210478EF214AE22600977E16 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		210478F1214AE22600977E16 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		210478F1214AE22600977E16 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		210478F4214AE22600977E16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		210478F6214AE23800977E16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		210478F9214AE23800977E16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		210478FB214AE23800977E16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21047901214AEDEF00977E16 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		21047903214AEDFE00977E16 /* NoticeboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeboardViewController.swift; sourceTree = "<group>"; };
+		21047905214AEE0A00977E16 /* TimetableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableViewController.swift; sourceTree = "<group>"; };
+		21047907214AEE5C00977E16 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		2104790B214AFD3600977E16 /* JSONWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONWork.swift; sourceTree = "<group>"; };
+		2104790D214B00F600977E16 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +70,14 @@
 			children = (
 				210478ED214AE22600977E16 /* AppDelegate.swift */,
 				210478EF214AE22600977E16 /* FirstViewController.swift */,
-				210478F1214AE22600977E16 /* SecondViewController.swift */,
+				210478F1214AE22600977E16 /* LoginViewController.swift */,
+				2104790B214AFD3600977E16 /* JSONWork.swift */,
 				210478F3214AE22600977E16 /* Main.storyboard */,
+				2104790D214B00F600977E16 /* CustomTextField.swift */,
+				21047907214AEE5C00977E16 /* LoadingViewController.swift */,
+				21047901214AEDEF00977E16 /* TasksViewController.swift */,
+				21047903214AEDFE00977E16 /* NoticeboardViewController.swift */,
+				21047905214AEE0A00977E16 /* TimetableViewController.swift */,
 				210478F6214AE23800977E16 /* Assets.xcassets */,
 				210478F8214AE23800977E16 /* LaunchScreen.storyboard */,
 				210478FB214AE23800977E16 /* Info.plist */,
@@ -138,9 +156,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				210478F2214AE22600977E16 /* SecondViewController.swift in Sources */,
+				21047908214AEE5C00977E16 /* LoadingViewController.swift in Sources */,
+				210478F2214AE22600977E16 /* LoginViewController.swift in Sources */,
+				21047904214AEDFE00977E16 /* NoticeboardViewController.swift in Sources */,
+				21047902214AEDEF00977E16 /* TasksViewController.swift in Sources */,
 				210478EE214AE22600977E16 /* AppDelegate.swift in Sources */,
+				21047906214AEE0A00977E16 /* TimetableViewController.swift in Sources */,
+				2104790C214AFD3600977E16 /* JSONWork.swift in Sources */,
 				210478F0214AE22600977E16 /* FirstViewController.swift in Sources */,
+				2104790E214B00F600977E16 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2B66H5BK49;
 				INFOPLIST_FILE = Waterfly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +321,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bekos.Waterfly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,6 +332,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2B66H5BK49;
 				INFOPLIST_FILE = Waterfly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,7 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bekos.Waterfly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
