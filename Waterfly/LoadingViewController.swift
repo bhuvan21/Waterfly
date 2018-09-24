@@ -7,57 +7,55 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class LoadingViewController: UIViewController {
 
+    var username : String = ""
+    var password : String = ""
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //json_request()
-    }
-    
-    /*
-     TO BE FIXED
-    func json_request(_ url:String, localusername: String, localpassword: String)
-    {
-        let url:NSURL = NSURL(string: url)!
-        let session = URLSession.shared
+        username = APPGROUP!.string(forKey: "username")!
+        password = APPGROUP!.string(forKey: "password")!
         
-        let request = NSMutableURLRequest(url: url as URL)
+        let url = URL(string: "https://firefly-server.herokuapp.com/summary")!
+        
+
+        var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        username = localusername
-        password = localpassword
-        let paramString = "username=" + localusername + "&password=" + localpassword
-        request.httpBody = paramString.data(using: String.Encoding.utf8)
-        let task = session.dataTask(with: request as URLRequest) {
+        let postData = String(describing:"username=" + username + "&password=" + password).data(using: .utf8)
+        request.httpBody = postData
+        
+        let task = URLSession.shared.dataTask(with: request) {
             (data, response, error) in
             guard let _:NSData = data as NSData?, let _:URLResponse = response, error == nil else {
                 print("error")
+                self.performSegue(withIdentifier: "backtologin", sender: "")
                 return
             }
-            
-            if let dataString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
-            {
-                if dataString as String == self.CONNECTION_REFUSED {
-                    self.message.text = "Please Enter a valid login."
-                }
-                else {
-                    let dataFromString = dataString.data(using: String.Encoding.utf8.rawValue, allowLossyConversion: false)
-                    ALL = JSON(data: dataFromString!)
-                    
-                    self.mainJSONString = dataString
-                    self.buttonActive = !self.buttonActive
-                    print(ALL)
-                    print("Done!")
-                    self.yeetboi()
-                }
-                self.buttonActive = !self.buttonActive
-                self.activity.stopAnimating()
+            do {
+                try INFO = JSON.init(data: data!)
             }
-            
+            catch {
+                self.performSegue(withIdentifier: "backtologin", sender: "")
+            }
+
+            print(INFO)
         }
-        
         task.resume()
-    }*/
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "backtologin" {
+            if let dest = segue.destination as? LoginViewController {
+                dest.infoLabel.text = "An error occurred."
+            }
+        }
+    }
 
 }

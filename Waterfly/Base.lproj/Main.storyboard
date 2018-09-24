@@ -156,7 +156,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="wGN-Lp-Lk8"/>
                                         </constraints>
-                                        <state key="normal" image="LoginButton">
+                                        <state key="normal" image="bar.png">
                                             <color key="titleColor" red="0.99194461107254028" green="0.99615627527236938" blue="0.99600595235824585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -220,6 +220,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2xg-i2-9g7"/>
                     </view>
+                    <connections>
+                        <segue destination="gna-St-98Y" kind="show" identifier="backtologin" id="9No-ZU-BGs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l08-XN-E0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -246,7 +249,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LoginButton" width="342" height="114"/>
+        <image name="bar.png" width="200" height="40"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
         <image name="waterflylogo" width="120" height="120"/>

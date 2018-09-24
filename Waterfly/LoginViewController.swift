@@ -17,11 +17,10 @@ class LoginViewController: UIViewController {
     var username : String = ""
     var password : String = ""
     
-    let CONNECTION_REFUSED = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>401 Unauthorized</title>\n<h1>Unauthorized</h1>\n<p>The server could not verify that you are authorized to access the URL requested.  You either supplied the wrong credentials (e.g. a bad password), or your browser doesn't understand how to supply the credentials required.</p>\n"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     @IBAction func loginPressed(_ sender: UIButton) {
@@ -31,6 +30,8 @@ class LoginViewController: UIViewController {
             infoLabel.text = "Please enter a username and password."
         }
         else {
+            APPGROUP!.set(username, forKey:"username")
+            APPGROUP!.set(password, forKey:"password")
             performSegue(withIdentifier: "loading", sender:"")
         }
     }
