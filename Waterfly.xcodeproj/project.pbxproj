@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		210478EE214AE22600977E16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210478ED214AE22600977E16 /* AppDelegate.swift */; };
-		210478F0214AE22600977E16 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210478EF214AE22600977E16 /* FirstViewController.swift */; };
 		210478F2214AE22600977E16 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210478F1214AE22600977E16 /* LoginViewController.swift */; };
 		210478F5214AE22600977E16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210478F3214AE22600977E16 /* Main.storyboard */; };
 		210478F7214AE23800977E16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 210478F6214AE23800977E16 /* Assets.xcassets */; };
@@ -17,17 +16,16 @@
 		21047904214AEDFE00977E16 /* NoticeboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21047903214AEDFE00977E16 /* NoticeboardViewController.swift */; };
 		21047906214AEE0A00977E16 /* TimetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21047905214AEE0A00977E16 /* TimetableViewController.swift */; };
 		21047908214AEE5C00977E16 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21047907214AEE5C00977E16 /* LoadingViewController.swift */; };
-		2104790C214AFD3600977E16 /* JSONWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2104790B214AFD3600977E16 /* JSONWork.swift */; };
 		2104790E214B00F600977E16 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2104790D214B00F600977E16 /* CustomTextField.swift */; };
 		2164304E2156D300008341ED /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 2164304D2156D2FF008341ED /* bar.png */; };
 		216430522156E0B6008341ED /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216430512156E0B6008341ED /* Singleton.swift */; };
+		21643055215AD80D008341ED /* LessonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21643054215AD80D008341ED /* LessonCell.swift */; };
 		4696BFD519142039D2102E52 /* Pods_Waterfly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A0A4996042641EF322758A /* Pods_Waterfly.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		210478EA214AE22600977E16 /* Waterfly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waterfly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		210478ED214AE22600977E16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		210478EF214AE22600977E16 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		210478F1214AE22600977E16 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		210478F4214AE22600977E16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		210478F6214AE23800977E16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,11 +35,11 @@
 		21047903214AEDFE00977E16 /* NoticeboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeboardViewController.swift; sourceTree = "<group>"; };
 		21047905214AEE0A00977E16 /* TimetableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableViewController.swift; sourceTree = "<group>"; };
 		21047907214AEE5C00977E16 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
-		2104790B214AFD3600977E16 /* JSONWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONWork.swift; sourceTree = "<group>"; };
 		2104790D214B00F600977E16 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		2164304D2156D2FF008341ED /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar.png; sourceTree = "<group>"; };
 		216430512156E0B6008341ED /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		216430532156FF6C008341ED /* Waterfly.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Waterfly.entitlements; sourceTree = "<group>"; };
+		21643054215AD80D008341ED /* LessonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonCell.swift; sourceTree = "<group>"; };
 		68A0A4996042641EF322758A /* Pods_Waterfly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Waterfly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFAC6F9E7A264A1A77CD4E8F /* Pods-Waterfly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waterfly.release.xcconfig"; path = "Pods/Target Support Files/Pods-Waterfly/Pods-Waterfly.release.xcconfig"; sourceTree = "<group>"; };
 		C1A3E37C6F77942461A3A8F7 /* Pods-Waterfly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waterfly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Waterfly/Pods-Waterfly.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,10 +80,9 @@
 			children = (
 				216430532156FF6C008341ED /* Waterfly.entitlements */,
 				210478ED214AE22600977E16 /* AppDelegate.swift */,
-				210478EF214AE22600977E16 /* FirstViewController.swift */,
 				210478F1214AE22600977E16 /* LoginViewController.swift */,
-				2104790B214AFD3600977E16 /* JSONWork.swift */,
 				210478F3214AE22600977E16 /* Main.storyboard */,
+				21643054215AD80D008341ED /* LessonCell.swift */,
 				2104790D214B00F600977E16 /* CustomTextField.swift */,
 				21047907214AEE5C00977E16 /* LoadingViewController.swift */,
 				216430512156E0B6008341ED /* Singleton.swift */,
@@ -248,10 +245,9 @@
 				21047904214AEDFE00977E16 /* NoticeboardViewController.swift in Sources */,
 				216430522156E0B6008341ED /* Singleton.swift in Sources */,
 				21047902214AEDEF00977E16 /* TasksViewController.swift in Sources */,
+				21643055215AD80D008341ED /* LessonCell.swift in Sources */,
 				210478EE214AE22600977E16 /* AppDelegate.swift in Sources */,
 				21047906214AEE0A00977E16 /* TimetableViewController.swift in Sources */,
-				2104790C214AFD3600977E16 /* JSONWork.swift in Sources */,
-				210478F0214AE22600977E16 /* FirstViewController.swift in Sources */,
 				2104790E214B00F600977E16 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

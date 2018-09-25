@@ -9,6 +9,6 @@
 import Foundation
 import SwiftyJSON
 
-var INFO : JSON? = []
+var INFO : JSON = []
 let APPGROUP = UserDefaults(suiteName: "group.waterfly")
 

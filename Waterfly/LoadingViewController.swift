@@ -43,8 +43,11 @@ class LoadingViewController: UIViewController {
             catch {
                 self.performSegue(withIdentifier: "backtologin", sender: "")
             }
-
             print(INFO)
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "gotdata", sender: "")
+            }
+            
         }
         task.resume()
     }
