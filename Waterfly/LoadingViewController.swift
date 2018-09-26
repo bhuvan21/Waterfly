@@ -34,14 +34,18 @@ class LoadingViewController: UIViewController {
             (data, response, error) in
             guard let _:NSData = data as NSData?, let _:URLResponse = response, error == nil else {
                 print("error")
-                self.performSegue(withIdentifier: "backtologin", sender: "")
+                DispatchQueue.main.async {
+                    self.performSegue(withIdentifier: "backtologin", sender: "")
+                }
                 return
             }
             do {
                 try INFO = JSON.init(data: data!)
             }
             catch {
-                self.performSegue(withIdentifier: "backtologin", sender: "")
+                DispatchQueue.main.async {
+                    self.performSegue(withIdentifier: "backtologin", sender: "")
+                }
             }
             print(INFO)
             DispatchQueue.main.async {
@@ -49,7 +53,9 @@ class LoadingViewController: UIViewController {
             }
             
         }
-        task.resume()
+        DispatchQueue.global(qos: .userInitiated).async {
+            task.resume()
+        }
     }
     
     

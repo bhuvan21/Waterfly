@@ -50,18 +50,33 @@
                                     <segment title="F"/>
                                     <segment title="S"/>
                                 </segments>
+                                <connections>
+                                    <action selector="dayValueChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="rMp-bz-5c8"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="45z-6d-jL4">
-                                <rect key="frame" x="0.0" y="93" width="320" height="426"/>
+                                <rect key="frame" x="0.0" y="103" width="320" height="416"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="zjo-5H-qW5">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LessonCell" rowHeight="50" id="zjo-5H-qW5" customClass="LessonCell" customModule="Waterfly" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zjo-5H-qW5" id="k2s-nG-S63">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAo-km-B9k">
+                                                    <rect key="frame" x="15" y="11" width="279" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="LessonLabel" destination="IAo-km-B9k" id="af8-hG-cZ5"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -74,7 +89,6 @@
                         <constraints>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="45z-6d-jL4" secondAttribute="trailing" id="6SQ-Bh-Qu5"/>
                             <constraint firstItem="VBQ-IT-6XT" firstAttribute="top" secondItem="D0i-Nv-Yb8" secondAttribute="bottom" id="6Y1-8K-ToL"/>
-                            <constraint firstItem="45z-6d-jL4" firstAttribute="top" secondItem="VBQ-IT-6XT" secondAttribute="bottom" id="Chf-va-uce"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="VBQ-IT-6XT" secondAttribute="trailing" id="JYB-1G-qql"/>
                             <constraint firstItem="45z-6d-jL4" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="KNB-QR-DvJ"/>
                             <constraint firstItem="D0i-Nv-Yb8" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="M2p-xu-DOj"/>
@@ -82,6 +96,7 @@
                             <constraint firstItem="D0i-Nv-Yb8" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="fCP-3N-C8a"/>
                             <constraint firstItem="D0i-Nv-Yb8" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="hfE-OQ-FRH"/>
                             <constraint firstItem="VBQ-IT-6XT" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="lYb-Py-fEU"/>
+                            <constraint firstItem="45z-6d-jL4" firstAttribute="top" secondItem="VBQ-IT-6XT" secondAttribute="bottom" constant="10" id="lm5-ep-clS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>

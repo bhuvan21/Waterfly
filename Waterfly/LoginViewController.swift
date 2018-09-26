@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -21,6 +21,14 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        usernameTextField.delegate = self
+        passwordTextField.delegate = self
+        
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 
     @IBAction func loginPressed(_ sender: UIButton) {
@@ -32,6 +40,8 @@ class LoginViewController: UIViewController {
         else {
             APPGROUP!.set(username, forKey:"username")
             APPGROUP!.set(password, forKey:"password")
+            APPGROUP!.synchronize()
+            
             performSegue(withIdentifier: "loading", sender:"")
         }
     }

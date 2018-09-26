@@ -10,5 +10,5 @@ import Foundation
 import SwiftyJSON
 
 var INFO : JSON = []
-let APPGROUP = UserDefaults(suiteName: "group.waterfly")
+let APPGROUP = UserDefaults(suiteName: "group.com.bekos.WaterflyIOS")
 

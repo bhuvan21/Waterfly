@@ -9,15 +9,22 @@
 import UIKit
 
 class TimetableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+
     var dayIndex : Int = 0
+    
+    @IBAction func dayValueChanged(_ sender: UISegmentedControl) {
+        dayIndex = sender.selectedSegmentIndex
+        tableView.reloadData()
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return INFO["timetable"][dayIndex].count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "timetablecell", for: indexPath) //as! LessonCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LessonCell", for: indexPath) as! LessonCell
+        
+        cell.LessonLabel.text = INFO["timetable"][dayIndex][indexPath.row]["subject"].string
         
         return cell
     }
