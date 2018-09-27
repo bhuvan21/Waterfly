@@ -19,11 +19,20 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        APPGROUP!.synchronize()
+        
         // Do any additional setup after loading the view, typically from a nib.
         
         usernameTextField.delegate = self
         passwordTextField.delegate = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
+        if (APPGROUP!.string(forKey: "username") != nil) {
+            performSegue(withIdentifier: "loading", sender: nil)
+        }
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -42,7 +51,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             APPGROUP!.set(password, forKey:"password")
             APPGROUP!.synchronize()
             
-            performSegue(withIdentifier: "loading", sender:"")
+            performSegue(withIdentifier: "loading", sender: nil)
         }
     }
     

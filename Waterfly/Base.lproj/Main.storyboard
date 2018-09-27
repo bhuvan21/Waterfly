@@ -284,6 +284,7 @@
                         <viewLayoutGuide key="safeArea" id="2xg-i2-9g7"/>
                     </view>
                     <connections>
+                        <outlet property="ActivityIndicator" destination="8Te-7C-Inh" id="jec-e4-cZE"/>
                         <segue destination="gna-St-98Y" kind="show" identifier="backtologin" id="9No-ZU-BGs"/>
                         <segue destination="49e-Tb-3d3" kind="show" identifier="gotdata" id="4Ew-ch-PWG"/>
                     </connections>

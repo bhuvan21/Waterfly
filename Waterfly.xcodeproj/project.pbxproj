@@ -20,10 +20,41 @@
 		2164304E2156D300008341ED /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 2164304D2156D2FF008341ED /* bar.png */; };
 		216430522156E0B6008341ED /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216430512156E0B6008341ED /* Singleton.swift */; };
 		21643055215AD80D008341ED /* LessonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21643054215AD80D008341ED /* LessonCell.swift */; };
+		29E64A53215D0A66002747DF /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E64A52215D0A66002747DF /* NotificationCenter.framework */; };
+		29E64A56215D0A66002747DF /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E64A55215D0A66002747DF /* TodayViewController.swift */; };
+		29E64A59215D0A66002747DF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E64A57215D0A66002747DF /* MainInterface.storyboard */; };
+		29E64A5D215D0A66002747DF /* Timetable.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 29E64A51215D0A65002747DF /* Timetable.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4696BFD519142039D2102E52 /* Pods_Waterfly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A0A4996042641EF322758A /* Pods_Waterfly.framework */; };
+		808DC731F24F72C2A73FEACD /* Pods_Timetable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C473061885E0CC301226F19D /* Pods_Timetable.framework */; };
+		D451E0B9199E6CBDCC89AF8B /* Pods_Waterfly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E64A62215D0FC4002747DF /* Pods_Waterfly.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		29E64A5B215D0A66002747DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 210478E2214AE22600977E16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29E64A50215D0A65002747DF;
+			remoteInfo = Timetable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		29E64A61215D0A66002747DF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				29E64A5D215D0A66002747DF /* Timetable.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1008C7E74236BEC3E6DCF28B /* Pods-Timetable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timetable.release.xcconfig"; path = "Pods/Target Support Files/Pods-Timetable/Pods-Timetable.release.xcconfig"; sourceTree = "<group>"; };
 		210478EA214AE22600977E16 /* Waterfly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waterfly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		210478ED214AE22600977E16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		210478F1214AE22600977E16 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -40,9 +71,18 @@
 		216430512156E0B6008341ED /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		216430532156FF6C008341ED /* Waterfly.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Waterfly.entitlements; sourceTree = "<group>"; };
 		21643054215AD80D008341ED /* LessonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonCell.swift; sourceTree = "<group>"; };
+		29E64A51215D0A65002747DF /* Timetable.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Timetable.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		29E64A52215D0A66002747DF /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		29E64A55215D0A66002747DF /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		29E64A58215D0A66002747DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		29E64A5A215D0A66002747DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29E64A62215D0FC4002747DF /* Pods_Waterfly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Waterfly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29E64A64215D12E3002747DF /* Timetable.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Timetable.entitlements; sourceTree = "<group>"; };
+		2B23B51D5E4FCA2D03E2E628 /* Pods-Timetable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timetable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Timetable/Pods-Timetable.debug.xcconfig"; sourceTree = "<group>"; };
 		68A0A4996042641EF322758A /* Pods_Waterfly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Waterfly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFAC6F9E7A264A1A77CD4E8F /* Pods-Waterfly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waterfly.release.xcconfig"; path = "Pods/Target Support Files/Pods-Waterfly/Pods-Waterfly.release.xcconfig"; sourceTree = "<group>"; };
 		C1A3E37C6F77942461A3A8F7 /* Pods-Waterfly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waterfly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Waterfly/Pods-Waterfly.debug.xcconfig"; sourceTree = "<group>"; };
+		C473061885E0CC301226F19D /* Pods_Timetable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Timetable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +91,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4696BFD519142039D2102E52 /* Pods_Waterfly.framework in Frameworks */,
+				D451E0B9199E6CBDCC89AF8B /* Pods_Waterfly.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29E64A4E215D0A65002747DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29E64A53215D0A66002747DF /* NotificationCenter.framework in Frameworks */,
+				808DC731F24F72C2A73FEACD /* Pods_Timetable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				210478EC214AE22600977E16 /* Waterfly */,
+				29E64A54215D0A66002747DF /* Timetable */,
 				210478EB214AE22600977E16 /* Products */,
 				91EE4031382AF92AA474384F /* Pods */,
 				29CFC47E28FD442A4A8718DB /* Frameworks */,
@@ -71,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				210478EA214AE22600977E16 /* Waterfly.app */,
+				29E64A51215D0A65002747DF /* Timetable.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,9 +152,23 @@
 		29CFC47E28FD442A4A8718DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				29E64A62215D0FC4002747DF /* Pods_Waterfly.framework */,
 				68A0A4996042641EF322758A /* Pods_Waterfly.framework */,
+				29E64A52215D0A66002747DF /* NotificationCenter.framework */,
+				C473061885E0CC301226F19D /* Pods_Timetable.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		29E64A54215D0A66002747DF /* Timetable */ = {
+			isa = PBXGroup;
+			children = (
+				29E64A64215D12E3002747DF /* Timetable.entitlements */,
+				29E64A55215D0A66002747DF /* TodayViewController.swift */,
+				29E64A57215D0A66002747DF /* MainInterface.storyboard */,
+				29E64A5A215D0A66002747DF /* Info.plist */,
+			);
+			path = Timetable;
 			sourceTree = "<group>";
 		};
 		91EE4031382AF92AA474384F /* Pods */ = {
@@ -110,6 +176,8 @@
 			children = (
 				C1A3E37C6F77942461A3A8F7 /* Pods-Waterfly.debug.xcconfig */,
 				AFAC6F9E7A264A1A77CD4E8F /* Pods-Waterfly.release.xcconfig */,
+				2B23B51D5E4FCA2D03E2E628 /* Pods-Timetable.debug.xcconfig */,
+				1008C7E74236BEC3E6DCF28B /* Pods-Timetable.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -126,15 +194,37 @@
 				210478E7214AE22600977E16 /* Frameworks */,
 				210478E8214AE22600977E16 /* Resources */,
 				326B9A23B15B7098F9071A39 /* [CP] Embed Pods Frameworks */,
+				29E64A61215D0A66002747DF /* Embed App Extensions */,
+				E494764EF0A65FFA4D6F8DCE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				29E64A5C215D0A66002747DF /* PBXTargetDependency */,
 			);
 			name = Waterfly;
 			productName = Waterfly;
 			productReference = 210478EA214AE22600977E16 /* Waterfly.app */;
 			productType = "com.apple.product-type.application";
+		};
+		29E64A50215D0A65002747DF /* Timetable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29E64A60215D0A66002747DF /* Build configuration list for PBXNativeTarget "Timetable" */;
+			buildPhases = (
+				620A9CA68D3AAC2DC8A33373 /* [CP] Check Pods Manifest.lock */,
+				29E64A4D215D0A65002747DF /* Sources */,
+				29E64A4E215D0A65002747DF /* Frameworks */,
+				29E64A4F215D0A65002747DF /* Resources */,
+				D80B2740A253C465FB0C9F2E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Timetable;
+			productName = Timetable;
+			productReference = 29E64A51215D0A65002747DF /* Timetable.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -147,6 +237,14 @@
 				ORGANIZATIONNAME = bhuvan21;
 				TargetAttributes = {
 					210478E9214AE22600977E16 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					29E64A50215D0A65002747DF = {
 						CreatedOnToolsVersion = 10.0;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -170,6 +268,7 @@
 			projectRoot = "";
 			targets = (
 				210478E9214AE22600977E16 /* Waterfly */,
+				29E64A50215D0A65002747DF /* Timetable */,
 			);
 		};
 /* End PBXProject section */
@@ -183,6 +282,14 @@
 				210478F7214AE23800977E16 /* Assets.xcassets in Resources */,
 				210478F5214AE22600977E16 /* Main.storyboard in Resources */,
 				2164304E2156D300008341ED /* bar.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29E64A4F215D0A65002747DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29E64A59215D0A66002747DF /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +316,66 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Waterfly/Pods-Waterfly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		620A9CA68D3AAC2DC8A33373 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Timetable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D80B2740A253C465FB0C9F2E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Timetable/Pods-Timetable-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E494764EF0A65FFA4D6F8DCE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Waterfly/Pods-Waterfly-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FE808565D3C4E2B07F6DDADC /* [CP] Check Pods Manifest.lock */ = {
@@ -252,7 +419,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		29E64A4D215D0A65002747DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29E64A56215D0A66002747DF /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29E64A5C215D0A66002747DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29E64A50215D0A65002747DF /* Timetable */;
+			targetProxy = 29E64A5B215D0A66002747DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		210478F3214AE22600977E16 /* Main.storyboard */ = {
@@ -269,6 +452,14 @@
 				210478F9214AE23800977E16 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		29E64A57215D0A66002747DF /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29E64A58215D0A66002747DF /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -394,6 +585,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C1A3E37C6F77942461A3A8F7 /* Pods-Waterfly.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Waterfly/Waterfly.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -415,6 +607,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AFAC6F9E7A264A1A77CD4E8F /* Pods-Waterfly.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Waterfly/Waterfly.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -429,6 +622,48 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		29E64A5E215D0A66002747DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B23B51D5E4FCA2D03E2E628 /* Pods-Timetable.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Timetable/Timetable.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F276LS8S7;
+				INFOPLIST_FILE = Timetable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bekos.WaterflyIOS.Timetable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		29E64A5F215D0A66002747DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1008C7E74236BEC3E6DCF28B /* Pods-Timetable.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Timetable/Timetable.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F276LS8S7;
+				INFOPLIST_FILE = Timetable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bekos.WaterflyIOS.Timetable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -449,6 +684,15 @@
 			buildConfigurations = (
 				210478FF214AE23800977E16 /* Debug */,
 				21047900214AE23800977E16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29E64A60215D0A66002747DF /* Build configuration list for PBXNativeTarget "Timetable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29E64A5E215D0A66002747DF /* Debug */,
+				29E64A5F215D0A66002747DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

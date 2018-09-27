@@ -2,9 +2,17 @@
 # platform :ios, '9.0'
 
 target 'Waterfly' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
+    # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+    use_frameworks!
+    
+    # Pods for Waterfly
+    pod 'SwiftyJSON', '~> 4.0'
+end
 
-  # Pods for Waterfly
-  pod 'SwiftyJSON', '~> 4.0'
+target 'Timetable' do
+    # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+    use_frameworks!
+    
+    # Pods for Waterfly
+    pod 'SwiftyJSON', '~> 4.0'
 end
