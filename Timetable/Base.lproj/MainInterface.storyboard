@@ -14,45 +14,62 @@
             <objects>
                 <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="Timetable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmV-GX-Ubt">
-                                <rect key="frame" x="10" y="37" width="91" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PlaceholderTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofm-db-h6Y">
-                                <rect key="frame" x="182" y="37" width="128" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ku-QL-IpR">
-                                <rect key="frame" x="10" y="0.0" width="53" height="30"/>
-                                <state key="normal" title="Refresh"/>
-                                <connections>
-                                    <action selector="refreshButton_touchUpInside:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="3G8-PT-7m6"/>
-                                </connections>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WpQ-Pu-J2E">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LessonCell" rowHeight="50" id="rlf-Ep-TWt" customClass="LessonCell" customModule="Waterfly" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rlf-Ep-TWt" id="G0f-J7-yEC">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w72-63-dFL">
+                                                    <rect key="frame" x="15" y="14.5" width="90.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PlaceholderTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEC-BD-DWx">
+                                                    <rect key="frame" x="177.5" y="14.5" width="127.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="UEC-BD-DWx" firstAttribute="trailing" secondItem="G0f-J7-yEC" secondAttribute="trailingMargin" id="YhI-GG-Gsh"/>
+                                                <constraint firstItem="UEC-BD-DWx" firstAttribute="centerY" secondItem="G0f-J7-yEC" secondAttribute="centerY" id="a8X-No-Jbw"/>
+                                                <constraint firstItem="w72-63-dFL" firstAttribute="leading" secondItem="G0f-J7-yEC" secondAttribute="leadingMargin" id="maU-Sr-tCB"/>
+                                                <constraint firstItem="w72-63-dFL" firstAttribute="centerY" secondItem="G0f-J7-yEC" secondAttribute="centerY" id="rXg-9r-Dzi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="LessonLabel" destination="w72-63-dFL" id="z4N-oI-RfX"/>
+                                            <outlet property="LessonTimeLabel" destination="UEC-BD-DWx" id="BK5-IC-K7R"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="0Ku-QL-IpR" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="10" id="7RJ-Ek-wwC"/>
-                            <constraint firstItem="0Ku-QL-IpR" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="8Qb-u5-shH"/>
-                            <constraint firstItem="nmV-GX-Ubt" firstAttribute="bottom" secondItem="ssy-KU-ocm" secondAttribute="bottom" constant="-2" id="CVW-BA-B8U"/>
-                            <constraint firstItem="Ofm-db-h6Y" firstAttribute="bottom" secondItem="ssy-KU-ocm" secondAttribute="bottom" constant="-2" id="GYT-UN-i2K"/>
-                            <constraint firstItem="nmV-GX-Ubt" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="10" id="SJ6-0C-opL"/>
-                            <constraint firstItem="Ofm-db-h6Y" firstAttribute="trailing" secondItem="ssy-KU-ocm" secondAttribute="trailing" constant="-10" id="TgL-07-1yg"/>
+                            <constraint firstItem="WpQ-Pu-J2E" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="OaK-J3-An9"/>
+                            <constraint firstItem="WpQ-Pu-J2E" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" id="lvn-zP-G6h"/>
+                            <constraint firstAttribute="bottom" secondItem="WpQ-Pu-J2E" secondAttribute="bottom" id="tWq-nn-laz"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="WpQ-Pu-J2E" secondAttribute="trailing" id="wfa-ht-xbO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="60"/>
+                    <size key="freeformSize" width="320" height="110"/>
                     <connections>
-                        <outlet property="LessonName" destination="nmV-GX-Ubt" id="Ui3-NI-PfD"/>
-                        <outlet property="LessonTime" destination="Ofm-db-h6Y" id="7eR-Ff-YNO"/>
+                        <outlet property="lessonTableView" destination="WpQ-Pu-J2E" id="cl0-Ab-eUu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>

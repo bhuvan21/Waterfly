@@ -11,7 +11,8 @@ import UIKit
 class LessonCell: UITableViewCell {
 
     @IBOutlet weak var LessonLabel: UILabel!
-
+    @IBOutlet weak var LessonTimeLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

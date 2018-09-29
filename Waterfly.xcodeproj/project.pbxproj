@@ -20,6 +20,7 @@
 		2164304E2156D300008341ED /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 2164304D2156D2FF008341ED /* bar.png */; };
 		216430522156E0B6008341ED /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216430512156E0B6008341ED /* Singleton.swift */; };
 		21643055215AD80D008341ED /* LessonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21643054215AD80D008341ED /* LessonCell.swift */; };
+		295FF316215FE81600DA13E5 /* LessonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21643054215AD80D008341ED /* LessonCell.swift */; };
 		29E64A53215D0A66002747DF /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E64A52215D0A66002747DF /* NotificationCenter.framework */; };
 		29E64A56215D0A66002747DF /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E64A55215D0A66002747DF /* TodayViewController.swift */; };
 		29E64A59215D0A66002747DF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E64A57215D0A66002747DF /* MainInterface.storyboard */; };
@@ -424,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29E64A56215D0A66002747DF /* TodayViewController.swift in Sources */,
+				295FF316215FE81600DA13E5 /* LessonCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

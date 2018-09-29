@@ -56,7 +56,6 @@ class LoadingViewController: UIViewController {
                 
                 for dayIndex in 0...INFO["timetable"].array!.count-1 {
                     var lastSubject = ""
-                    var doublesHad = 0
                     
                     let day = INFO["timetable"][dayIndex]
                     timetableData.append([])
@@ -72,9 +71,12 @@ class LoadingViewController: UIViewController {
                         // It checks whether it's subject name is the same as the lesson that preceeded it
                         // It checks whether that lesson occurs precisely 5 mins after the former lesson
                         // If both of these are true, it's a valid double lesson, otherwise, it's not
-                        if lesson["subject"].string! == lastSubject && Calendar.current.dateComponents([.minute], from: inFormatter.date(from: day[lessonIndex-1]["endtime"].string!)!, to: inFormatter.date(from: lesson["time"].string!)!).minute == 5 {
-                            doublesHad += 1
-                            timetableData[dayIndex][lessonIndex-doublesHad]["endtime"] = lesson["endtime"]
+                        if lessonIndex > 0 && lessonIndex+1 != day.array!.count && Calendar.current.dateComponents([.minute], from: inFormatter.date(from: day[lessonIndex-1]["endtime"].string!)!, to: inFormatter.date(from: lesson["time"].string!)!).minute! > 5 {
+                            timetableData[dayIndex].append(JSON(parseJSON: "{\"subject\":\"Break\", \"time\":\"\(day[lessonIndex-1]["endtime"])\",\"endtime\":\"\(day[lessonIndex]["time"])\"}"))
+                            lastSubject = "Break"
+                        }
+                        if lesson["subject"].string! == lastSubject {
+                            timetableData[dayIndex][timetableData[dayIndex].count-1]["endtime"] = lesson["endtime"]
                         } else {
                             timetableData[dayIndex].append(lesson)
                             lastSubject = lesson["subject"].string!
